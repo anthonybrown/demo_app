@@ -1,11 +1,15 @@
-<h1>Listing users</h1>
+<h1>Listing all users</h1>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
-      <th></th>
+      <th>&nbsp;</th>
       <th>Email</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th>Modifications</th>
       <th></th>
       <th></th>
     </tr>
@@ -17,8 +21,11 @@
         <td><%= user.name %></td>
         <td>&nbsp;</td>
         <td><%= user.email %></td>
+        <td>&nbsp;</td>
         <td><%= link_to 'Show', user %></td>
+        <td></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
